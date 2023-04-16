@@ -1,0 +1,90 @@
+body {
+  background-image: url("background.png");
+  background-size: cover;
+  font-family: Times New Roman, Times, serif;
+
+}
+
+h1 {
+  text-align: center;
+  color: red;
+}
+
+.score {
+  margin-bottom: 20px;
+  text-align: center;
+  color: red;
+  
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+}
+
+.choices button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0 100px;
+}
+
+.choices button:hover img {
+  transform: scale(1.2);
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: red;
+}
+#rock,
+#paper,
+#scissors {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+#rock {
+    left: 40%;
+    top: 50%;
+}
+
+#paper {
+    left: 50%;
+    top: 50%;
+}
+
+#scissors {
+    left: 60%;
+    top: 50%;
+}
+.choice {
+    border: none;
+    background: none;
+    cursor: pointer;
+    top: 50%;
+}
+
+.choice:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ff0;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#game {
+    display: flex;
+    top: 50%;
+}
+
